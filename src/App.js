@@ -4,6 +4,7 @@ import Header from './Components/HeaderComponent';
 import FooterCarousel from './Components/FooterCarousel';
 import ContentComponent from "./Components/ContentComponent";
 import PageFooterComponent from './Components/PageFooterComponent';
+import CopyrightComponent from "./Components/CopyRightComponent";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <ContentComponent />
       <FooterCarousel />
       <PageFooterComponent />
-      
+      <CopyrightComponent/>
     </div>
   );
 }

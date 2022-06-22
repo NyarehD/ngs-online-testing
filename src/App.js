@@ -1,8 +1,9 @@
 import React from "react";
 import Nav from "./Components/NavComponent";
 import Header from './Components/HeaderComponent';
-import FooterCarousel from './Components/FooterCarousel'
+import FooterCarousel from './Components/FooterCarousel';
 import ContentComponent from "./Components/ContentComponent";
+import PageFooterComponent from './Components/PageFooterComponent';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />  
       <ContentComponent />
       <FooterCarousel />
+      <PageFooterComponent />
       
     </div>
   );

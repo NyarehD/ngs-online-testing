@@ -5,6 +5,7 @@ import FooterCarousel from './Components/FooterCarousel';
 import ContentComponent from "./Components/ContentComponent";
 import PageFooterComponent from './Components/PageFooterComponent';
 import CopyrightComponent from "./Components/CopyRightComponent";
+import ScrollBtnComponent from "./Components/ScrollBtnComponent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FooterCarousel />
       <PageFooterComponent />
       <CopyrightComponent/>
+      <ScrollBtnComponent />
     </div>
   );
 }

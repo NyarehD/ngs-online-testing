@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import FooterCarouselStyle from "./FooterCarousel.module.sass";
+import FooterCarouselStyle from "./footer-carousel.module.sass";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,

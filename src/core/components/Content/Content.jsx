@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentStyle from '../Style/ContentComponent.module.sass'
+import ContentStyle from './Content.module.sass'
 
 function ContentComponent() {
   return (

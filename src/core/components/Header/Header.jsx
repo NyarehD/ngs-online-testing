@@ -9,8 +9,8 @@ import { faMagnifyingGlass,
     faFileText,
     faPhone} from '@fortawesome/free-solid-svg-icons';
 
-import HeaderStyle from "../Style/HeaderComponent.module.sass";
-import fbmessenger from "../image/messeger.png"
+import HeaderStyle from "./Header.module.sass";
+import fbmessenger from "../../../assets/messeger.png"
 
 library.add(faMagnifyingGlass,
     faCircleQuestion,

@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import FooterCarouselStyle from "../Style/FooterCarousel.module.sass";
+import FooterCarouselStyle from "./FooterCarousel.module.sass";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 
 //Import Image
-import Img1 from "../image/01.jpg";
-import Img2 from "../image/02.jpg";
-import Img3 from "../image/03.jpg";
-import Img4 from "../image/04.jpg";
-import Img5 from "../image/05.jpg";
-import Img6 from "../image/06.jpg";
-import Img7 from "../image/07.jpg";
-import Img8 from "../image/08.jpg";
-import Img9 from "../image/09.jpg";
-import Img10 from "../image/10.jpg";
+import Img1 from "../../../assets/01.jpg";
+import Img2 from "../../../assets/02.jpg";
+import Img3 from "../../../assets/03.jpg";
+import Img4 from "../../../assets/04.jpg";
+import Img5 from "../../../assets/05.jpg";
+import Img6 from "../../../assets/06.jpg";
+import Img7 from "../../../assets/07.jpg";
+import Img8 from "../../../assets/08.jpg";
+import Img9 from "../../../assets/09.jpg";
+import Img10 from "../../../assets/10.jpg";
 
 //Create image arrays for looping
 let Images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10];

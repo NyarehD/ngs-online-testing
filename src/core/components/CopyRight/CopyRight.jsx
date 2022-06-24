@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../Style/CopyRightComponent.module.sass";
+import styles from "./CopyRight.module.sass";
 
 function Copyright(){
     return(

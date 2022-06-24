@@ -5,7 +5,7 @@ import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-import styles from '../Style/ScrollBtnComponent.module.sass';
+import styles from './ScrollButton.module.sass';
 
 
 

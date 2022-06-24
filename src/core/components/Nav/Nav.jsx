@@ -1,5 +1,5 @@
 import React from 'react'
-import NavStyle from  "../Style/NavComponent.module.sass"
+import NavStyle from  "./Nav.module.sass"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPhone , faEnvelope , faComment , faUser} from '@fortawesome/free-solid-svg-icons'
 

@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 
-import pageFooterStyles from "../Style/PageFooterComponent.module.sass";
+import pageFooterStyles from "./PageFooter.module.sass";
 
 const PageFooter = () => {
   return (

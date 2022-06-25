@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "./core/components/Nav/Nav";
-import Header from "./core/components/Header/Header";
-import FooterCarousel from "./core/components/FooterCarousel/FooterCarousel";
-import Content from "./core/components/Content/Content";
-import PageFooter from "./core/components/PageFooter/PageFooter";
-import Copyright from "./core/components/CopyRight/CopyRight";
-import ScrollButton from "./core/components/ScrollButton/ScrollButton";
+import Nav from "./core/components/nav/nav";
+import Header from "./core/components/header/header";
+import FooterCarousel from "./core/components/footer-carousel/footer-carousel";
+import Content from "./core/components/content/content";
+import PageFooter from "./core/components/page-footer/page-footer";
+import Copyright from "./core/components/copy-right/copy-right";
+import ScrollButton from "./core/components/scroll-button/scroll-button";
 
 function App() {
   return (

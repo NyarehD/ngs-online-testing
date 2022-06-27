@@ -7,7 +7,9 @@ import PageFooter from "./core/components/page-footer/page-footer";
 import Copyright from "./core/components/copy-right/copy-right";
 import ScrollButton from "./core/components/scroll-button/scroll-button";
 
+
 function App() {
+  
   return (
     <div className="App">
       <Nav />

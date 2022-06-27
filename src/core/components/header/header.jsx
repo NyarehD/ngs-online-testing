@@ -14,6 +14,7 @@ import {
 import HeaderStyle from "./header.module.sass";
 import fbmessenger from "../../../assets/messeger.png";
 
+
 library.add(
   faMagnifyingGlass,
   faCircleQuestion,
@@ -24,6 +25,7 @@ library.add(
 );
 
 function Header() {
+ 
   //refresh the page when screen size change
   window.addEventListener("resize", function () {
     "use strict";

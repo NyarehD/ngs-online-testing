@@ -6,17 +6,18 @@ import Content from "./core/components/content/content";
 import PageFooter from "./core/components/page-footer/page-footer";
 import Copyright from "./core/components/copy-right/copy-right";
 import ScrollButton from "./core/components/scroll-button/scroll-button";
-
+import About from './app/pages/about/about'
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav />
       <Header />
       <Content />
       <FooterCarousel />
       <PageFooter />
       <Copyright />
-      <ScrollButton />
+      <ScrollButton /> */}
+      <About/>
     </div>
   );
 }

@@ -7,16 +7,16 @@ import {
 } from "react-icons/md";
 
 //Import Image
-import Img1 from "../../../assets/01.jpg";
-import Img2 from "../../../assets/02.jpg";
-import Img3 from "../../../assets/03.jpg";
-import Img4 from "../../../assets/04.jpg";
-import Img5 from "../../../assets/05.jpg";
-import Img6 from "../../../assets/06.jpg";
-import Img7 from "../../../assets/07.jpg";
-import Img8 from "../../../assets/08.jpg";
-import Img9 from "../../../assets/09.jpg";
-import Img10 from "../../../assets/10.jpg";
+import Img1 from "../../../assets/footer-carousel/01.jpg";
+import Img2 from "../../../assets/footer-carousel/02.jpg";
+import Img3 from "../../../assets/footer-carousel/03.jpg";
+import Img4 from "../../../assets/footer-carousel/04.jpg";
+import Img5 from "../../../assets/footer-carousel/05.jpg";
+import Img6 from "../../../assets/footer-carousel/06.jpg";
+import Img7 from "../../../assets/footer-carousel/07.jpg";
+import Img8 from "../../../assets/footer-carousel/08.jpg";
+import Img9 from "../../../assets/footer-carousel/09.jpg";
+import Img10 from "../../../assets/footer-carousel/10.jpg";
 
 //Create image arrays for looping
 let Images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10];

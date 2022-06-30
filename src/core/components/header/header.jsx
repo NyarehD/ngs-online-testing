@@ -65,7 +65,7 @@ function Header() {
         <div className={HeaderStyle.title_wrapper}>
           <div className={HeaderStyle.navBar}>
             <div className={HeaderStyle.brand}>
-              <a href="#" className={HeaderStyle.logo}>
+              <a href="/" className={HeaderStyle.logo}>
                 <span className={HeaderStyle.logo_text}>
                   <strong>VS</strong>
                   GROUP
@@ -75,19 +75,19 @@ function Header() {
             <div className={HeaderStyle.top_nav}>
               <ul className={HeaderStyle.nav}>
                 <li>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="#">Team</a>
+                  <a href="/team">Team</a>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="/service">Services</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
                 <li>
                   <a href="#">

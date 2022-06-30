@@ -1,33 +1,5 @@
-$color1: #ededed
-$color2: #7f7f7f
-$color3: #ffffff
-
-$break_point-s:576px
-$break_point-md:768px
-$break_point-lg:992px
-$break_point-xl:1200px
-$break_point-xxl:1400px
-
-$max-width-s:540px
-$max-width-md:720px
-$max-width-lg:960px
-$max-width-xl:1140px
-$max-width-xxl:1320px
-
-
-@mixin default_input()
-    background-color: transparent
-    border: 1px solid $color1
-    border-radius: 2px
-    box-shadow: 0 0px 10px 0px rgb(0 0 0 / 5%)
-    color: $color2
-    font-size: 12px
-    letter-spacing: 0.1em
-    padding-bottom: 9px
-    padding-left: 20px
-    padding-right: 20px
-    padding-top: 9px
-    outline: none
+@import '../../../style/mixin.module'
+@import '../../../style/variable.module'
 
 @mixin flex_between()
     display: flex
@@ -38,7 +10,7 @@ $max-width-xxl:1320px
 .contact_container
     padding: 63px 0px
     width:100%
-    margin:0 auto
+    margin:4rem auto
     display:block
 
 *
@@ -53,6 +25,8 @@ $max-width-xxl:1320px
     margin-bottom: 30px
     h1
         margin-bottom: 15px
+        color: #4c4c4c
+        opacity: 1
 
 .form_input_container
     display:block
@@ -94,6 +68,7 @@ $max-width-xxl:1320px
     letter-spacing: 1px
     line-height: 1.5
     word-break: break-word
+    opacity: 1
     // font-size:30px
     color:#4c4c4c
 .contact_location

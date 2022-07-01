@@ -102,3 +102,135 @@
     background-color: #e4405f
     svg
         fill: white
+
+
+//Sass by Ma Yee Mon
+
+
+
+.personalExperience
+    font-family: "poppins", sans-serif
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.container
+    width: 75%
+
+    // background-color: yellow
+.personalExperience .personalExperienceContainer .content p
+    color: #7f7f7f
+    font-size: 17px
+    font-weight: 300
+    line-height: 2
+
+.content
+    margin-top:50px
+    h5
+        font-size: 23px
+        margin-bottom: 24px
+        font-weight: 700
+        letter-spacing: 1px
+        line-height: 1.5
+        word-break: break-word
+    p
+        margin-bottom: 10px
+        margin-top: 0
+        display: block
+        margin-block-start: 1em
+        margin-block-end: 1em
+        margin-inline-start: 0px
+        margin-inline-end: 0px
+
+
+    // background-color: hotpink
+.personalExperience .personalExperienceContainer .content h3
+    color: #444040
+    font-weight: bolder
+    letter-spacing: 1px
+    line-height: 1.5
+
+
+.contentpart2
+    display: flex
+
+.contentpart2 .left
+    width: 60%
+    margin-right: 50px
+
+.contentpart2 .left p
+    color: #363232
+    font-size: 14px
+    font-weight: 800
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    margin-bottom: 20px
+    position: relative
+
+.contentpart2 .left span
+    position: absolute
+    right: 0
+
+.contentpart2 .left .progress
+    width: 100%
+    height: 4px
+    background: #e5e5e5
+    margin-bottom: 20px
+    position: relative
+
+.contentpart2 .left .progress::before
+    content: ''
+    height: 100%
+
+    position: absolute
+    left: 0
+    top: 0
+    background-color: red
+
+.contentpart2 .left .pg1::before
+    content: ''
+    width: 93%
+    background-color: #ff497c
+
+.contentpart2 .left .pg2::before
+    content: ''
+    width: 90%
+    background-color: #a0ce4e
+
+.contentpart2 .left .pg3::before
+    content: ''
+    width: 98%
+    background-color: #00bea3
+
+.contentpart2 .left .pg4::before
+    content: ''
+    width: 93%
+    background-color: #f1894c
+
+.contentpart2 .right
+    width: 40%
+    p
+        margin-bottom: 10px
+        line-height: 2
+
+.body .container .contentpart2 .right p
+    line-height: 2
+    color: #7f7f7f
+    font-size: 17px
+    font-weight: 300
+    word-spacing: 1px
+    margin: 0px 0px 10px 0px
+    padding: 0
+
+@media screen and (max-width:990px)
+    .contentpart2
+        display: block
+
+    .contentpart2 .left
+        width: 100%
+        margin-bottom: 30px
+
+    .contentpart2 .right
+        width: 100%
+      

@@ -1,4 +1,4 @@
-.circle 
+.circle
     display: flex
     justify-content: center
     align-items: center
@@ -12,23 +12,19 @@
     margin-right: 15px
     margin-bottom: 15px
     position: fixed
-    opacity: -1 
+    opacity: -1
     transition: 0.8s
     &:hover
-    background-color: #c964c4
-    transform: translateY(5px)
+        background-color: #c964c4
+        transform: translateY(5px)
 
+body
+    scroll-behavior: smooth
+    height: fit-content
 
-
-body 
-     scroll-behavior: smooth
-     height: fit-content
-    
-.show 
-
-    display: block
-    
-    
-    
-    
-    
+@media screen and (max-width: 400px)
+    .circle
+        width: 40px
+        height: 40px
+        margin: 10px 10px
+        padding: 0

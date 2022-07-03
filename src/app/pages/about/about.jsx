@@ -1,9 +1,9 @@
 import React from "react";
-import image0 from "../../../assets/about/about-image.png";
-import image from "../../../assets/about/team_slide_01.jpg";
-import image2 from "../../../assets/about/team_slide_02.jpg";
-import image3 from "../../../assets/about/team_slide_03.jpg";
-import image4 from "../../../assets/about/team_slide_04.jpg";
+import image0 from "../../../assets/about-image.png";
+import image from "../../../assets/team_slide_01.jpg";
+import image2 from "../../../assets/team_slide_02.jpg";
+import image3 from "../../../assets/team_slide_03.jpg";
+import image4 from "../../../assets/team_slide_04.jpg";
 import icon1 from "../../../assets/icon/icon1.jpg";
 import icon2 from "../../../assets/icon/icon2.jpg";
 import icon3 from "../../../assets/icon/icon3.jpg";
@@ -101,7 +101,7 @@ function About() {
         <div className={aboutStyles.cards}>{cardItems}</div>
       </div>
 
-      <div className={aboutStyles.imageBox}>
+      <div>
         <img src={image} alt="" id="image" />
         <div className={aboutStyles.name}>
           <ul>

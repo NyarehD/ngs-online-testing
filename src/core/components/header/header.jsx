@@ -78,7 +78,7 @@ function Header() {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/team">Team</a>
+                  <a href="/team-list">Team</a>
                 </li>
                 <li>
                   <a href="/service">Services</a>
@@ -87,7 +87,7 @@ function Header() {
                   <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <a href="contact">Contact</a>
                 </li>
                 <li>
                   <a href="#">

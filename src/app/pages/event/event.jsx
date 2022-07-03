@@ -172,11 +172,17 @@ const Event = () => {
 
         <div className="">
           <h4 className={eventStyle.datetime}>
-            <FontAwesomeIcon icon={faCalendarDays} />
-            {item.date}
             <span>
-              <FontAwesomeIcon icon={faClock} />
-              {item.time}
+              <span className={eventStyle.icon}>
+                <FontAwesomeIcon icon={faCalendarDays} />
+              </span>
+              <span>{item.date}</span>
+            </span>
+            <span>
+              <span className={eventStyle.icon}>
+                <FontAwesomeIcon icon={faClock} />
+              </span>
+              <span>{item.time}</span>
             </span>
           </h4>
         </div>
@@ -185,8 +191,6 @@ const Event = () => {
           <p>{item.text}</p>
         </div>
       </div>
-
-
     </div>
   ));
   const categories = [

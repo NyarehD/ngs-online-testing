@@ -51,41 +51,26 @@
     color: #fff
     border-radius: 4px
     border: 0
-
     width: 180px
     height: 60px
-
     margin-top: 30px
-
-    position:relative
-
     background: linear-gradient(to right, #5b83cd 0%, #c280bf 100%)
-    &:hover
-            &::before
-                background:#fff
-                color:#4c4c4c
-
+    &:focus
+        box-shadow: 0 0 3px 0 rgb(100 100 100 / 75%)
+    &:active
+        transform: translateY(2px)
     &::before
         content:"SEND MESSAGE"
-
         font-family: Poppins, "san-serif"
-
-        position:absolute
-
         border-radius: 4px
-
-        display:flex
-        justify-content:center
-        align-items:center
-
-        padding:1.1rem 2.3rem
-       
+        padding:1.1rem 2.4rem
         color:#fff
         background:transparent
-
-        font-weight:500
-
         transition: all .35s ease .1s
+    &:hover
+        &::before
+            background:#fff
+            color:#4c4c4c
 
 
 .address_list_container
@@ -99,7 +84,6 @@
     line-height: 1.5
     word-break: break-word
     opacity: 1
-    // font-size:30px
     color:#4c4c4c
 .contact_location
     align-items: center

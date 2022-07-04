@@ -102,7 +102,6 @@ const ContactFrom = () => {
           />
         </div>
         <button type="submit" className={ContactStyle.form_button}>
-          SEND MESSAGE
         </button>
       </form>
     </div>

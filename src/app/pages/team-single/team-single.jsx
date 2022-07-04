@@ -1,8 +1,8 @@
 import React from 'react'
 import TeamSingleStyle from './team-single.module.sass'
-
 import TeamSinglePhoto from '../../../assets/team-single-photo.jpg';
-
+import { FontAwesomeIcon } from"@fortawesome/react-fontawesome";
+import { faUser, faEnvelope, faPhone, faLink, faPenToSquare} from"@fortawesome/free-solid-svg-icons";
 
 function teamSingle() {
   return (
@@ -45,36 +45,33 @@ function teamSingle() {
 
 
             <table className={`${TeamSingleStyle.table} ${TeamSingleStyle.teamTable}`}>
-									<tbody>
-										<tr>
-											<th scope="row">Occupation:</th>
-											<td>Senior Executive</td>
-										</tr>
-										<tr>
-											<th scope="row">Experience:</th>
-											<td>9 Years</td>
-										</tr>
-										<tr>
-											<th scope="row">Email:</th>
-											<td class="link-a">
-												<a href="#">deanwhales@MaxiCom.com</a>
-											</td>
-										</tr>
-										<tr class="border-bottom">
-											<th scope="row">Location:</th>
-											<td>Westmond, MA</td>
-										</tr>
-										<tr>
-											<th>Phone:</th>
-											<td>012-985-624</td>
-										</tr>
-									</tbody>
-							</table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Occupation:</th>
+                                <td>Senior Executive</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Experience:</th>
+                                <td>9 Years</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email:</th>
+                                <td class="link-a">
+                                    <a href="#">deanwhales@MaxiCom.com</a>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th scope="row">Location:</th>
+                                <td>Westmond, MA</td>
+                            </tr>
+                            <tr>
+                                <th>Phone:</th>
+                                <td>012-985-624</td>
+                            </tr>
+                        </tbody>
+                </table>
         </div>
       </div>
-
-
-
       <div className={TeamSingleStyle.PersonalExperience}>
       <div className={TeamSingleStyle.personalExperienceContainer}>
 
@@ -106,8 +103,46 @@ function teamSingle() {
           </div>
         
       </div>
-    </div>
-    </div>
+      </div>
+
+            <h5 className={TeamSingleStyle.contactTitle}>Contact Me</h5>
+            <form  className={TeamSingleStyle.row}>
+
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.col_md_6} ${TeamSingleStyle.col_lg_6} ${TeamSingleStyle.group}`}>      
+                    <input type="text" name="fullname"  id="name" placeholder='FULL NAME' ></input>
+                    <label for="name" className={TeamSingleStyle.label}><FontAwesomeIcon icon={faUser} className={TeamSingleStyle.icon}></FontAwesomeIcon></label>    
+                </div>
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.col_md_6} ${TeamSingleStyle.col_lg_6} ${TeamSingleStyle.group}`} >      
+                    <input type="text" name="email"id="name" placeholder='EMAIL ADDRESS' required="email"></input>
+                    <label for="name" className={TeamSingleStyle.label}><FontAwesomeIcon icon={faEnvelope} className={TeamSingleStyle.icon}></FontAwesomeIcon></label>
+                </div>      
+                
+
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.col_md_6} ${TeamSingleStyle.col_lg_6} ${TeamSingleStyle.group}`}>      
+                    <input type="tel"  name="phone" id="number" placeholder='YOUR PHONE' required="phone"></input>
+                    <label for="name" className={TeamSingleStyle.label}><FontAwesomeIcon icon={faPhone} className={TeamSingleStyle.icon}></FontAwesomeIcon></label>
+                </div>
+
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.col_md_6} ${TeamSingleStyle.col_lg_6} ${TeamSingleStyle.group}`}>      
+                    <input type="text" name="topic" id="name" placeholder='YOUR TOPIC'></input>
+                    <label for="name" className={TeamSingleStyle.label}><FontAwesomeIcon icon={faLink} className={TeamSingleStyle.icon}></FontAwesomeIcon></label>
+                </div>
+
+
+                
+                <div className={`${TeamSingleStyle.col_xs_12}  ${TeamSingleStyle.group}`}>      
+                    <textarea type="text" name="message"  row="8" placeholder='YOUR MESSAGE'></textarea>
+                    <label for="name" className={TeamSingleStyle.label}><FontAwesomeIcon icon={faPenToSquare} className={TeamSingleStyle.icon}></FontAwesomeIcon></label>
+                </div>
+
+
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.teamSingleBorderWrap}`}>      
+                        <button type="submit" className={TeamSingleStyle.teamSingleButton}>SUBMIT</button>
+                </div>
+
+                
+            </form>
+        </div>
   )
 }
 

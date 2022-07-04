@@ -238,7 +238,7 @@ const Event = () => {
       <div className={eventStyle.right}>
         <div className={eventStyle.search}>
           <h2 className={eventStyle.title}>Search</h2>
-          <form action="">
+          <form action="" className={eventStyle.form_event}>
             <input type="search" placeholder="Search Keyword" />
             <button className={eventStyle.btnSearch}>
               <FontAwesomeIcon icon={faSearch} />

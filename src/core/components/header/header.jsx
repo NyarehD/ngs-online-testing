@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faMagnifyingGlass,
   faCircleQuestion,
@@ -25,7 +25,7 @@ library.add(
 );
 
 function Header() {
- 
+
   //refresh the page when screen size change
   window.addEventListener("resize", function () {
     "use strict";

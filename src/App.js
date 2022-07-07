@@ -7,6 +7,9 @@ import PageFooter from "./core/components/page-footer/page-footer";
 import Copyright from "./core/components/copy-right/copy-right";
 import ScrollButton from "./core/components/scroll-button/scroll-button";
 import View from "./setup/routes-manager/view";
+import TeamSingle from "./app/pages/team-single/team-single";
+
+
 function App() {
   
   return (

@@ -101,8 +101,7 @@ const ContactFrom = () => {
             placeholder="MESSAGE"
           />
         </div>
-        <button type="submit" className={ContactStyle.form_button}>
-          SEND MESSAGE
+        <button className={ContactStyle.form_button} onClick={(e)=>{e.preventDefault();}}>
         </button>
       </form>
     </div>

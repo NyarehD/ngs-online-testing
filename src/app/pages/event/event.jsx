@@ -9,11 +9,7 @@ import portf_6 from "../../../assets/event/06.jpg";
 import portf_7 from "../../../assets/event/07.jpg";
 import portf_8 from "../../../assets/event/08.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDays,
-  faClock,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays, faClock, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Event = () => {
   const portfolio = [
@@ -242,7 +238,7 @@ const Event = () => {
       <div className={eventStyle.right}>
         <div className={eventStyle.search}>
           <h2 className={eventStyle.title}>Search</h2>
-          <form action="">
+          <form action="" className={eventStyle.form_event}>
             <input type="search" placeholder="Search Keyword" />
             <button className={eventStyle.btnSearch}>
               <FontAwesomeIcon icon={faSearch} />
@@ -252,8 +248,8 @@ const Event = () => {
         <div className={eventStyle.about}>
           <h2 className={eventStyle.title}>About</h2>
           <p className={eventStyle.item_text}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam
-            aliquyam diam diam dolore dolores duo eirmos.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam
+            dolore dolores duo eirmos.
           </p>
         </div>
         <div className={eventStyle.readDiv}>

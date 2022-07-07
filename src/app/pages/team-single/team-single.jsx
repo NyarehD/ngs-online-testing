@@ -136,8 +136,8 @@ function teamSingle() {
                 </div>
 
 
-                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.teamSingleBorderWrap}`}>      
-                        <button type="submit" className={TeamSingleStyle.teamSingleButton}>SUBMIT</button>
+                <div className={`${TeamSingleStyle.col_xs_12} ${TeamSingleStyle.teamSingleBorderWrap}`}>
+                        <button type="submit" className={TeamSingleStyle.teamSingleButton}></button>
                 </div>
 
                 

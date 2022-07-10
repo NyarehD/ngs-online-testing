@@ -14,7 +14,6 @@ import image10 from "../../../assets/gallery-list/10.jpg"
 import image11 from "../../../assets/gallery-list/11.jpg"
 import image12 from "../../../assets/gallery-list/12.jpg"
 
-
 export default function Gallery() {
     const filterDefault = [
         {label: "all", isChecked: true},
@@ -98,9 +97,14 @@ export default function Gallery() {
             description: "Lorem bwa hahaha"
         },
     ]
+    /**
+     * The looped card components
+     * @type {}
+     */
     const cardComponents = galleryData.map((item, index) => {
         let initialClass = "";
-        const classes = `${galleryStyle.card}${item.filter.reduce((previousValue, currentValue) => previousValue + " " + currentValue, initialClass)} card`
+        const classes = `${galleryStyle.card}${item.filter.reduce((previousValue, currentValue) => previousValue + " " + currentValue, "")} card`
+
         return (
             <div className={classes} key={`galleryItem${index}`}>
                 <img src={item.img} alt=""/>
@@ -111,8 +115,10 @@ export default function Gallery() {
             </div>
         )
     })
+
     const [filters, setFilter] = useState(filterDefault);
     const [key, setKey] = useState("all");
+
     const isotope = useRef()
     const onFilter = (event) => {
         event.preventDefault()
@@ -128,12 +134,11 @@ export default function Gallery() {
     React.useEffect(() => {
         isotope.current = new Isotope(".galleryRow", {
             itemSelector: ".card",
-            layoutMode: "fitRows"
+            layoutMode: "fitRows",
         })
-
-        // isotope.current.arrange({filter: `*`})
-        // isotope.current.reloadItems()
-        return () => isotope.current.destroy()
+        return () => {
+            isotope.current.destroy()
+        }
     }, [])
     React.useEffect(() => {
         key === "all" ? isotope.current.arrange({filter: `*`}) : isotope.current.arrange({filter: `.${key}`})
@@ -154,6 +159,7 @@ export default function Gallery() {
             <div className={`${galleryStyle.galleryRow} galleryRow`}>
                 {cardComponents}
             </div>
+
         </div>
     )
 }

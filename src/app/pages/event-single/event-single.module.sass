@@ -261,31 +261,23 @@
 
   .photo
     display: grid
-    column-gap: 12px
     grid-template-columns: repeat(3, 1fr)
-    @include frameSize(1000px)
-      grid-template-columns: repeat(6, 1fr)
-      @include frameSize(768px)
-        grid-template-columns: repeat(4, 1fr)
-      @include frameSize(480px)
-        grid-template-columns: repeat(3, 1fr)
-      @include frameSize(368px)
-        grid-template-columns: repeat(2, 1fr)
-      @include frameSize(250px)
-        grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 5px
 
   .photoItems
     width: 100%
 
     a
       display: block
+      max-width: 100%
+      max-height: 100%
 
       img
-        border-radius: 10px
+        border-radius: 8px
         margin: 5px
-        max-height: 100px
-        max-width: 100%
         transition: 0.2s
+        object-fit: contain
+        width: 100%
 
         &:hover
           opacity: 0.8
@@ -317,14 +309,39 @@
         color: #fff
         background-color: #c280bf
 
-@media screen and (min-width: 990px)
-  .container
-    flex-wrap: wrap
-    margin: 0 auto
-    padding-top: 80px
-
+@media screen and (max-width: 1800px)
   .left
-    max-width: 900px
-
+    width: 55%
   .right
-    max-width: 900px
+    width: 25%
+
+@media screen and (max-width: 1440px)
+  .left
+    width: 60%
+  .right
+    width: 30%
+  .comments
+    margin: 0
+
+@media screen and (max-width: 1200px)
+  .container
+    flex-direction: column
+    justify-content: center
+  .left
+    width: 80%
+    margin: auto
+  .right
+    width: 80%
+    margin: auto
+  .recentPortfolio
+    .photo
+      grid-template-columns: repeat(6, 1fr)
+
+@media screen and (max-width: 790px)
+  .commentResponse
+    .commentForm
+      flex-direction: column
+
+  .recentPortfolio
+    .photo
+      grid-template-columns: repeat(4,1fr)
